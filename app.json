@@ -1,18 +1,20 @@
 {
   "expo": {
-    "name": "makro-app",
-    "slug": "makro-app",
+    "name": "Denge",
+    "slug": "denge",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "makroapp",
-    "userInterfaceStyle": "automatic",
+    "scheme": "denge",
+    "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.erenaksoy.denge"
     },
     "android": {
+      "package": "com.erenaksoy.denge",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#111113",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -23,14 +25,33 @@
       "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
+    "locales": {
+      "tr": "./locales/tr.json",
+      "en": "./locales/en.json"
+    },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F3F3F5",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Denge uses the camera to photograph your meals and scan barcodes.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Denge uses your photos so you can analyze a meal photo you already took.",
+          "cameraPermission": "Denge uses the camera to photograph your meals and scan barcodes."
         }
       ]
     ],

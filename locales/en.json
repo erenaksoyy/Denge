@@ -1,0 +1,5 @@
+{
+  "CFBundleDisplayName": "Denge",
+  "NSCameraUsageDescription": "Denge uses the camera to photograph your meals and scan barcodes.",
+  "NSPhotoLibraryUsageDescription": "Denge uses your photos so you can analyze a meal photo you already took."
+}

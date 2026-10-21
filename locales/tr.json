@@ -1,0 +1,5 @@
+{
+  "CFBundleDisplayName": "Denge",
+  "NSCameraUsageDescription": "Denge, öğünlerinin fotoğrafını çekmek ve barkod okumak için kamerayı kullanır.",
+  "NSPhotoLibraryUsageDescription": "Denge, daha önce çektiğin bir yemek fotoğrafını analiz edebilmen için fotoğraflarına erişir."
+}
